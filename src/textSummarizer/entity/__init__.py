@@ -13,8 +13,7 @@ class DataIngestionConfig:
 
 ## Data Validation entity
 @dataclass(frozen=True)
-class DataIngestionConfig:
+class DataValidationConfig:
     root_dir: Path
-    source_URL: str
-    local_data_file: Path
-    unzip_dir: Path
+    STATUS_FILE: str
+    ALL_REQUIRED_FILES: list
